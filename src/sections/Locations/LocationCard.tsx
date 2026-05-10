@@ -1,0 +1,59 @@
+// src/sections/Locations/LocationCard.tsx
+
+import { motion } from "framer-motion";
+
+interface LocationCardProps {
+  title: string;
+  properties: string;
+  image: string;
+  large?: boolean;
+}
+
+const LocationCard = ({
+  title,
+  properties,
+  image,
+  large,
+}: LocationCardProps) => {
+  return (
+    <motion.div
+      whileHover={{
+        y: -6,
+      }}
+      transition={{
+        duration: 0.3,
+      }}
+      className="cursor-pointer group"
+    >
+      {/* IMAGE */}
+      <div
+        className={`overflow-hidden rounded-2xl ${
+          large
+            ? "h-[260px] sm:h-[300px] md:h-[320px]"
+            : "h-[240px] sm:h-[260px] md:h-[280px]"
+        }`}
+      >
+        <motion.img
+          whileHover={{
+            scale: 1.08,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+          src={image}
+          alt={title}
+          className="object-cover w-full h-full"
+        />
+      </div>
+
+      {/* CONTENT */}
+      <div className="mt-3">
+        <h3 className="text-lg font-semibold text-black">{title}</h3>
+
+        <p className="mt-1 text-sm text-gray-500">{properties}</p>
+      </div>
+    </motion.div>
+  );
+};
+
+export default LocationCard;
