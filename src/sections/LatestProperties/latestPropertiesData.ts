@@ -1,15 +1,15 @@
 // src/sections/LatestProperties/latestPropertiesData.ts
 
-import img1 from "../../assets/images/1.png";
-import img2 from "../../assets/images/2.jpg";
-import img3 from "../../assets/images/3.jpeg";
-import img4 from "../../assets/images/2.jpg";
-import img5 from "../../assets/images/1.png";
-import img6 from "../../assets/images/3.jpeg";
+import img1 from "../../assets/images/Home/14.jpg";
+import img2 from "../../assets/images/Home/15.jpg";
+import img3 from "../../assets/images/Home/2.jpg";
+import img4 from "../../assets/images/Home/15.jpg";
+import img5 from "../../assets/images/Home/3.jpg";
+import img6 from "../../assets/images/Home/4.jpg";
 
-import agent1 from "../../assets/images/logo.png";
-import agent2 from "../../assets/images/2.jpg";
-import agent3 from "../../assets/images/3.jpeg";
+import agent1 from "../../assets/images/Home/25.jpg";
+import agent2 from "../../assets/images/Home/26.jpg";
+import agent3 from "../../assets/images/Home/25.jpg";
 
 export const latestPropertiesData = [
   {

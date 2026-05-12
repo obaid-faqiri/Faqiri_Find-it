@@ -1,6 +1,6 @@
 // src/sections/Process/processData.ts
 
-import processImage from "../../assets/images/2.jpg";
+import processImage from "../../assets/images/About/3.jpg";
 
 export const processData = {
   badge: "OUR PROCESS",

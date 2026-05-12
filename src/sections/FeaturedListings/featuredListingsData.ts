@@ -1,8 +1,8 @@
-import img1 from "../../assets/images/1.png";
-import img2 from "../../assets/images/2.jpg";
-import img3 from "../../assets/images/3.jpeg";
-import img4 from "../../assets/images/2.jpg";
-import img5 from "../../assets/images/1.png";
+import img1 from "../../assets/images/Home/1.jpg";
+import img2 from "../../assets/images/Home/2.jpg";
+import img3 from "../../assets/images/Home/3.jpg";
+import img4 from "../../assets/images/Home/4.jpg";
+import img5 from "../../assets/images/Home/5.jpg";
 
 export const featuredListingsData = [
   {

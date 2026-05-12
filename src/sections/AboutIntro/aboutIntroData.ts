@@ -1,7 +1,7 @@
 // src/sections/AboutIntro/aboutIntroData.ts
 
-import about1 from "../../assets/images/1.png";
-import about2 from "../../assets/images/2.jpg";
+import about1 from "../../assets/images/About/1.jpg";
+import about2 from "../../assets/images/About/2.jpg";
 
 export const aboutIntroData = {
   badge: "ABOUT US",

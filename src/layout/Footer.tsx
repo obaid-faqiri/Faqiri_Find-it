@@ -8,7 +8,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import footerBg from "../assets/images/1.png";
+import footerBg from "../assets/images/Home/24.jpg";
 
 const footerLinks = {
   contact: [

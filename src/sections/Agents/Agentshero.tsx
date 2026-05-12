@@ -16,8 +16,7 @@ const fadeUp = {
 
 const Agentshero = () => {
   return (
-    <section className="px-6 md:px-10 lg:px-12 py-10 bg-[#FFFFFF]">
-
+    <section className="px-6 pt-40 pb-10 md:px-10 lg:px-12 bg-[#FFFFFF]">
       {/* Header */}
       <motion.p
         initial={{ opacity: 0, y: 10 }}
@@ -47,8 +46,8 @@ const Agentshero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-base text-gray-500 max-w-[350px] leading-relaxed self-end"
         >
-          Our hero combine local knowledge, market expertise, and a passion
-          for helping clients find the right property.
+          Our hero combine local knowledge, market expertise, and a passion for
+          helping clients find the right property.
         </motion.p>
       </div>
 
@@ -92,7 +91,6 @@ const Agentshero = () => {
           </motion.a>
         ))}
       </div>
-
     </section>
   );
 };

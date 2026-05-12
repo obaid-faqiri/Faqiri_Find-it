@@ -1,9 +1,9 @@
 // src/sections/Team/teamData.ts
 
-import team1 from "../../assets/images/1.png";
-import team2 from "../../assets/images/2.jpg";
-import team3 from "../../assets/images/3.jpeg";
-import team4 from "../../assets/images/2.jpg";
+import team1 from "../../assets/images/About/4.png";
+import team2 from "../../assets/images/About/5.png";
+import team3 from "../../assets/images/About/6.jpg";
+import team4 from "../../assets/images/About/7.png";
 
 export const teamData = {
   badge: "OUR TEAM",

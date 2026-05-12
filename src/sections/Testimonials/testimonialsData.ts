@@ -1,11 +1,11 @@
 // src/sections/Testimonials/testimonialsData.ts
 
-import avatar1 from "../../assets/images/1.png";
-import avatar2 from "../../assets/images/2.jpg";
-import avatar3 from "../../assets/images/3.jpeg";
-import avatar4 from "../../assets/images/1.png";
-import avatar5 from "../../assets/images/2.jpg";
-import avatar6 from "../../assets/images/3.jpeg";
+import avatar1 from "../../assets/images/Home/16.jpg";
+import avatar2 from "../../assets/images/Home/17.jpg";
+import avatar3 from "../../assets/images/home/19.jpg";
+import avatar4 from "../../assets/images/Home/20.jpg";
+import avatar5 from "../../assets/images/Home/29.webp";
+import avatar6 from "../../assets/images/Home/30.webp";
 
 export const testimonialsData = [
   {

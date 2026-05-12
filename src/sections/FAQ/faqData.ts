@@ -1,6 +1,6 @@
 // src/sections/FAQ/faqData.ts
 
-import faqImage from "../../assets/images/2.jpg"; // replace with your actual image
+import faqImage from "../../assets/images/About/16.png"; // replace with your actual image
 
 export const faqData = {
   badge: "FAQ",

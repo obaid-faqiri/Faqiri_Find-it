@@ -24,7 +24,7 @@ const fadeUp = {
 
 const AboutIntro = () => {
   return (
-    <section className="bg-[#F5F5F5] px-6 md:px-10 lg:px-14 py-20 overflow-hidden">
+    <section className="w-full px-6 pt-32 pb-8 overflow-hidden bg-gray-100 md:pt-40 md:pb-16 md:px-12">
       <div className="mx-auto max-w-7xl">
         {/* TOP */}
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">

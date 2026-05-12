@@ -1,10 +1,10 @@
 // src/sections/Locations/locationsData.ts
 
-import img1 from "../../assets/images/1.png";
-import img2 from "../../assets/images/2.jpg";
-import img3 from "../../assets/images/3.jpeg";
-import img4 from "../../assets/images/1.png";
-import img5 from "../../assets/images/3.jpeg";
+import img1 from "../../assets/images/Home/8.jpg";
+import img2 from "../../assets/images/Home/9.jpg";
+import img3 from "../../assets/images/Home/10.jpg";
+import img4 from "../../assets/images/Home/11.jpg";
+import img5 from "../../assets/images/Home/12.jpg";
 
 export const locationsData = [
   {

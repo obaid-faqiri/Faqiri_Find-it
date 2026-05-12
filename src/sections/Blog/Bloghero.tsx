@@ -15,7 +15,7 @@ const fadeUp = {
 
 const Bloghero = () => {
   return (
-    <section className="px-6 md:px-10 lg:px-12 py-10 bg-[#FFFFFF]">
+    <section className="px-6 pt-40 pb-24 md:px-10 lg:px-12 bg-[#FFFFFF]">
       {/* Header */}
       <motion.p
         initial={{ opacity: 0, y: 10 }}

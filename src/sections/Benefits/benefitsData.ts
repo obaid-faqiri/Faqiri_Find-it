@@ -1,8 +1,8 @@
 // src/sections/Benefits/benefitsData.ts
 
-import mainImage from "../../assets/images/1.png";
-import topImage from "../../assets/images/2.jpg";
-import bottomImage from "../../assets/images/3.jpeg";
+import mainImage from "../../assets/images/Home/7.jpg";
+import topImage from "../../assets/images/Home/222.jpg";
+import bottomImage from "../../assets/images/Home/6.jpg";
 
 export const benefitsData = {
   badge: "OUR BENEFITS",

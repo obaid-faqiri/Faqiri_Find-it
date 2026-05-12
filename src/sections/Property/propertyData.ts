@@ -1,9 +1,26 @@
 // src/sections/Property/propertyData.ts
 
-import img1 from "../../assets/images/1.png";
-import img2 from "../../assets/images/2.jpg";
-import img3 from "../../assets/images/3.jpeg";
-// ... continue importing up to img21
+import img1 from "../../assets/images/properties/1.jpg";
+import img2 from "../../assets/images/properties/2.jpg";
+import img3 from "../../assets/images/properties/3.jpg";
+import img4 from "../../assets/images/properties/4.jpg";
+import img5 from "../../assets/images/properties/5.jpg";
+import img6 from "../../assets/images/properties/6.jpg";
+import img7 from "../../assets/images/properties/7.jpg";
+import img8 from "../../assets/images/properties/8.jpg";
+import img9 from "../../assets/images/properties/9.jpg";
+import img10 from "../../assets/images/properties/10.jpg";
+import img11 from "../../assets/images/properties/11.jpg";
+import img12 from "../../assets/images/properties/12.jpg";
+import img13 from "../../assets/images/properties/13.jpg";
+import img14 from "../../assets/images/properties/14.jpg";
+import img15 from "../../assets/images/properties/15.jpg";
+import img16 from "../../assets/images/properties/16.jpg";
+import img17 from "../../assets/images/properties/17.jpg";
+import img18 from "../../assets/images/properties/18.jpg";
+import img19 from "../../assets/images/properties/19.jpg";
+import img20 from "../../assets/images/properties/20.jpg";
+import img21 from "../../assets/images/properties/21.jpg";
 
 export const propertyData = {
   badge: "LATEST PROPERTIES",
@@ -66,7 +83,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img4,
     },
     {
       name: "Family Mansion",
@@ -78,7 +95,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img5,
     },
     {
       name: "Family Mansion",
@@ -90,7 +107,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img6,
     },
     {
       name: "Family Mansion",
@@ -102,7 +119,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img7,
     },
     {
       name: "Family Mansion",
@@ -114,7 +131,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img8,
     },
     {
       name: "Family Mansion",
@@ -126,7 +143,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img9,
     },
     {
       name: "Family Mansion",
@@ -138,7 +155,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img10,
     },
     {
       name: "Family Mansion",
@@ -150,7 +167,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img11,
     },
     {
       name: "Family Mansion",
@@ -162,7 +179,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img12,
     },
     {
       name: "Family Mansion",
@@ -174,7 +191,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img13,
     },
     {
       name: "Family Mansion",
@@ -186,7 +203,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img14,
     },
     {
       name: "Family Mansion",
@@ -198,7 +215,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img15,
     },
     {
       name: "Family Mansion",
@@ -210,7 +227,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img16,
     },
     {
       name: "Family Mansion",
@@ -222,7 +239,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img17,
     },
     {
       name: "Family Mansion",
@@ -234,7 +251,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img18,
     },
     {
       name: "Family Mansion",
@@ -246,7 +263,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img19,
     },
     {
       name: "Family Mansion",
@@ -258,7 +275,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img20,
     },
     {
       name: "Family Mansion",
@@ -270,8 +287,7 @@ export const propertyData = {
       sqft: 150,
       agent: "Rachel Gray",
       price: "$2,200",
-      image: img3,
+      image: img21,
     }
-    // ... continue until you have 21 listings
   ],
 };

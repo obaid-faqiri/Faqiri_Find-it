@@ -16,7 +16,7 @@ const fadeUp = {
 
 const Property = () => {
   return (
-    <section className="bg-[#FFFFFF] px-6 md:px-10 lg:px-14 py-20">
+    <section className="bg-[#FFFFFF] px-6 pt-40 pb-20 md:px-10 lg:px-14">
       <div className="flex flex-col items-start gap-12 mx-auto lg:flex-row max-w-7xl">
         {/* LEFT SIDE - Cards */}
         <motion.div

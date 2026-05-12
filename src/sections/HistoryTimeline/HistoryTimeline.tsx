@@ -65,7 +65,7 @@ const HistoryTimeline = () => {
         {/* TIMELINE */}
         <div className="relative mt-20">
           {/* LINE */}
-          <div className="absolute left-0 hidden w-full h-px top-7 lg:block bg-black/10" />
+          <div className="absolute left-0 hidden w-full h-px top-[102px] lg:block bg-black/10" />
 
           <div className="grid grid-cols-1 gap-14 lg:grid-cols-4">
             {historyTimelineData.timeline.map((item, index) => (
@@ -79,9 +79,9 @@ const HistoryTimeline = () => {
                 className="relative"
               >
                 {/* DOT */}
-                <div className="absolute left-0 z-10 hidden w-3 h-3 rounded-full lg:block top-[22px] bg-[#F5A300]" />
+                <div className="absolute left-0 z-10 hidden w-4 h-4 rounded-full lg:block top-[95px] bg-[#F5A300]" />
 
-                <div className="mb-12">
+                <div className="mt-5 mb-12">
                   <h3 className="text-3xl font-semibold text-black">
                     {item.year}
                   </h3>
