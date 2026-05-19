@@ -1,11 +1,11 @@
 // src/sections/Property/Property.tsx
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { FiHome, FiMapPin, FiLayers } from "react-icons/fi";
 import { propertyData } from "./propertyData";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
@@ -79,10 +79,7 @@ const Property = () => {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {propertyData.sidebar.types.map((item, i) => (
-                      <button
-                        key={i}
-                        className="px-4 py-2 bg-white rounded-full"
-                      >
+                      <button key={i} className="px-4 py-2 bg-white rounded-full">
                         {item}
                       </button>
                     ))}
@@ -95,10 +92,7 @@ const Property = () => {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {propertyData.sidebar.categories.map((item, i) => (
-                      <button
-                        key={i}
-                        className="px-4 py-2 bg-white rounded-full"
-                      >
+                      <button key={i} className="px-4 py-2 bg-white rounded-full">
                         {item}
                       </button>
                     ))}
@@ -111,10 +105,7 @@ const Property = () => {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {propertyData.sidebar.locations.map((item, i) => (
-                      <button
-                        key={i}
-                        className="px-4 py-2 bg-white rounded-full"
-                      >
+                      <button key={i} className="px-4 py-2 bg-white rounded-full">
                         {item}
                       </button>
                     ))}

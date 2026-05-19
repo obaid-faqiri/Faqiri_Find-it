@@ -1,40 +1,56 @@
 // src/components/Header.tsx
-import React, { useState, useEffect } from "react";
+
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { logo } from "../assets/index";
+import { NavLink, useLocation } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const whatsappLink = "https://wa.me/93788653654";
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
+    setIsSticky(window.scrollY > 50);
+  };
+
+  const handleNavClick = () => {
+    setIsMenuOpen(false);
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Shared nav link style with animated sliding underline on hover
-  const navLinkClass =
-    "text-gray-600 hover:text-gray-900 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full";
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
+
+  const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `relative font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-gray-900 after:transition-all after:duration-300 ${
+      isActive
+        ? "text-black after:w-full"
+        : "text-gray-600 after:w-0 hover:text-gray-900 hover:after:w-full"
+    }`;
 
   return (
-    <motion.header
-      className={`fixed top-0 w-full z-10 transition-all duration-300 ${
-        isSticky ? "bg-white shadow-lg" : "bg-transparent"
+    <header
+      className={`fixed top-0 left-0 w-full z-50 bg-white transition-shadow duration-300 ${
+        isSticky ? "shadow-lg" : "shadow-none"
       }`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
     >
-      {/* Single row — logo | nav | buttons — all inside one flex container */}
       <div className="flex items-center justify-between px-8 py-4">
         {/* Logo */}
         <div className="flex items-center flex-shrink-0 space-x-2">
@@ -43,31 +59,51 @@ const Header = () => {
 
         {/* Desktop Navigation Links */}
         <nav className="items-center hidden space-x-8 lg:flex">
-          <Link to="/" className={navLinkClass}>
+          <NavLink end to="/" onClick={handleNavClick} className={navLinkClass}>
             Home
-          </Link>
-          <Link to="/about" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            onClick={handleNavClick}
+            className={navLinkClass}
+          >
             About Us
-          </Link>
-          <Link to="/properties" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink
+            to="/properties"
+            onClick={handleNavClick}
+            className={navLinkClass}
+          >
             Properties
-          </Link>
-          <Link to="/agents" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink
+            to="/agents"
+            onClick={handleNavClick}
+            className={navLinkClass}
+          >
             Agents
-          </Link>
-          <Link to="/blog" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink to="/blog" onClick={handleNavClick} className={navLinkClass}>
             Blog
-          </Link>
+          </NavLink>
         </nav>
 
         {/* Desktop Action Buttons */}
         <div className="flex-shrink-0 hidden space-x-4 lg:flex">
-          <motion.button
+          <motion.a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
             className="px-6 py-2 text-white bg-black rounded-3xl"
           >
             Contact Us
-          </motion.button>
+          </motion.a>
+
           <motion.button
             whileHover={{ scale: 1.1 }}
             className="bg-transparent border-[1.3px] border-black text-black px-6 py-2 rounded-3xl"
@@ -119,32 +155,55 @@ const Header = () => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`lg:hidden ${isMenuOpen ? "block" : "hidden"} bg-white p-4 shadow-lg`}
+        className={`lg:hidden ${
+          isMenuOpen ? "block" : "hidden"
+        } bg-white p-4 shadow-lg`}
       >
         <nav className="flex flex-col items-center pt-4 space-y-4">
-          <Link to="/" className={navLinkClass}>
+          <NavLink end to="/" onClick={handleNavClick} className={navLinkClass}>
             Home
-          </Link>
-          <Link to="/about" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            onClick={handleNavClick}
+            className={navLinkClass}
+          >
             About Us
-          </Link>
-          <Link to="/properties" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink
+            to="/properties"
+            onClick={handleNavClick}
+            className={navLinkClass}
+          >
             Properties
-          </Link>
-          <Link to="/agents" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink
+            to="/agents"
+            onClick={handleNavClick}
+            className={navLinkClass}
+          >
             Agents
-          </Link>
-          <Link to="/blog" className={navLinkClass}>
+          </NavLink>
+
+          <NavLink to="/blog" onClick={handleNavClick} className={navLinkClass}>
             Blog
-          </Link>
+          </NavLink>
 
           <div className="flex flex-col pt-4 space-y-2">
-            <motion.button
+            <motion.a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
-              className="px-6 py-2 text-white bg-black rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+              className="px-6 py-2 text-center text-white bg-black rounded-md"
             >
               Contact Us
-            </motion.button>
+            </motion.a>
+
             <motion.button
               whileHover={{ scale: 1.1 }}
               className="px-6 py-2 text-black bg-transparent border-2 border-black rounded-md"
@@ -154,7 +213,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
-    </motion.header>
+    </header>
   );
 };
 

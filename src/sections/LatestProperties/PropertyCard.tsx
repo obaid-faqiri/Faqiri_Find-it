@@ -1,35 +1,32 @@
 // src/sections/LatestProperties/PropertyCard.tsx
 
-import { motion } from "framer-motion";
 import { FiMapPin, FiHome, FiDroplet, FiMaximize2 } from "react-icons/fi";
 
 interface PropertyCardProps {
-  property: any;
+  property: {
+    image: string;
+    title: string;
+    type: string;
+    status: string;
+    location: string;
+    beds: number;
+    baths: number;
+    sqft: number | string;
+    agentImage: string;
+    agent: string;
+    price: string;
+  };
 }
 
 const PropertyCard = ({ property }: PropertyCardProps) => {
   return (
-    <motion.div
-      whileHover={{
-        y: -6,
-      }}
-      transition={{
-        duration: 0.3,
-      }}
-      className="overflow-hidden bg-white border border-gray-100 shadow-sm rounded-3xl group"
-    >
+    <div className="overflow-hidden bg-white border border-gray-100 shadow-sm cursor-pointer rounded-3xl group">
       {/* IMAGE */}
       <div className="relative overflow-hidden">
-        <motion.img
-          whileHover={{
-            scale: 1.08,
-          }}
-          transition={{
-            duration: 0.5,
-          }}
+        <img
           src={property.image}
           alt={property.title}
-          className="object-cover w-full h-[260px]"
+          className="object-cover w-full h-[260px] transition-transform duration-500 ease-out group-hover:scale-[1.08]"
         />
 
         {/* TAGS */}
@@ -96,7 +93,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
           <h4 className="text-lg font-semibold text-black">{property.price}</h4>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

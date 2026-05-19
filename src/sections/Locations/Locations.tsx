@@ -1,11 +1,11 @@
 // src/sections/Locations/Locations.tsx
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { FiCircle } from "react-icons/fi";
 import { locationsData } from "./locationsData";
 import LocationCard from "./LocationCard";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: {
     opacity: 0,
     y: 40,
@@ -60,9 +60,9 @@ const Locations = () => {
             variants={fadeUp}
             className="max-w-xl mx-auto mt-5 text-sm leading-relaxed text-gray-500 md:text-base"
           >
-            Each neighborhood has its own story. Discover the areas that
-            match your lifestyle — whether you seek vibrant city energy,
-            peaceful family communities, or exclusive luxury living.
+            Each neighborhood has its own story. Discover the areas that match
+            your lifestyle — whether you seek vibrant city energy, peaceful
+            family communities, or exclusive luxury living.
           </motion.p>
         </motion.div>
 
@@ -78,6 +78,7 @@ const Locations = () => {
               key={item.id}
               custom={index + 1}
               variants={fadeUp}
+              className="group"
             >
               <LocationCard
                 title={item.title}
@@ -100,6 +101,7 @@ const Locations = () => {
               key={item.id}
               custom={index + 4}
               variants={fadeUp}
+              className="group"
             >
               <LocationCard
                 title={item.title}

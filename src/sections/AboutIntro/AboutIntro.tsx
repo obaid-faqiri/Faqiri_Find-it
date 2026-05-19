@@ -1,21 +1,22 @@
 // src/sections/AboutIntro/AboutIntro.tsx
 
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { FiCircle } from "react-icons/fi";
 import { aboutIntroData } from "./aboutIntroData";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: {
     opacity: 0,
     y: 40,
   },
 
-  visible: (i: number) => ({
+  visible: (custom: number = 0) => ({
     opacity: 1,
     y: 0,
 
     transition: {
-      delay: i * 0.15,
+      delay: custom * 0.15,
       duration: 0.7,
       ease: "easeOut",
     },

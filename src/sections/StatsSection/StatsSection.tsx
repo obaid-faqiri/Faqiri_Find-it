@@ -1,6 +1,6 @@
 // src/sections/StatsSection/StatsSection.tsx
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { statsData } from "./statsData";
 
 type StatCardProps = {
@@ -12,7 +12,7 @@ type StatCardProps = {
   index: number;
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: {
     opacity: 0,
     y: 40,

@@ -1,10 +1,10 @@
 // src/sections/Process/Process.tsx
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { FiCircle, FiArrowRight } from "react-icons/fi";
 import { processData } from "./processData";
 
-const fadeUp = {
+const fadeUp :Variants = {
   hidden: {
     opacity: 0,
     y: 40,

@@ -2,10 +2,11 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { FiChevronDown } from "react-icons/fi";
 import { faqData } from "./faqData";
 
-const fadeUp = {
+const fadeUp : Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,

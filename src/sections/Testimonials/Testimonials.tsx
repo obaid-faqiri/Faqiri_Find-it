@@ -1,5 +1,5 @@
 // src/sections/Testimonials/Testimonials.tsx
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { FaStar } from "react-icons/fa6";
 import { testimonialsData } from "./testimonialsData";
 
@@ -13,7 +13,7 @@ type TestimonialCardProps = {
   index: number;
 };
 
-const fadeUp = {
+const fadeUp : Variants = {
   hidden: {
     opacity: 0,
     y: 50,

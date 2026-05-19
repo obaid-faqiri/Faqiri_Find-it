@@ -1,7 +1,5 @@
 // src/sections/Locations/LocationCard.tsx
 
-import { motion } from "framer-motion";
-
 interface LocationCardProps {
   title: string;
   properties: string;
@@ -16,15 +14,7 @@ const LocationCard = ({
   large,
 }: LocationCardProps) => {
   return (
-    <motion.div
-      whileHover={{
-        y: -6,
-      }}
-      transition={{
-        duration: 0.3,
-      }}
-      className="cursor-pointer group"
-    >
+    <div className="cursor-pointer group">
       {/* IMAGE */}
       <div
         className={`overflow-hidden rounded-2xl ${
@@ -33,16 +23,10 @@ const LocationCard = ({
             : "h-[240px] sm:h-[260px] md:h-[280px]"
         }`}
       >
-        <motion.img
-          whileHover={{
-            scale: 1.08,
-          }}
-          transition={{
-            duration: 0.5,
-          }}
+        <img
           src={image}
           alt={title}
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full transition-transform duration-500 ease-out group-hover:scale-[1.08]"
         />
       </div>
 
@@ -52,7 +36,7 @@ const LocationCard = ({
 
         <p className="mt-1 text-sm text-gray-500">{properties}</p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

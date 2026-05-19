@@ -1,10 +1,11 @@
 // src/sections/HistoryTimeline/HistoryTimeline.tsx
 
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { FiCircle } from "react-icons/fi";
 import { historyTimelineData } from "./historyTimelineData";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: {
     opacity: 0,
     y: 40,

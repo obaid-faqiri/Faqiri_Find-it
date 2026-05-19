@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { blogData } from "./blogData";
 
-const fadeUp = {
+const fadeUp : Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,

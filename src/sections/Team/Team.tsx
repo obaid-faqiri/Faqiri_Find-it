@@ -1,10 +1,10 @@
 // src/sections/Team/Team.tsx
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { FiCircle } from "react-icons/fi";
 import { teamData } from "./teamData";
 
-const fadeUp = {
+const fadeUp : Variants = {
   hidden: {
     opacity: 0,
     y: 40,

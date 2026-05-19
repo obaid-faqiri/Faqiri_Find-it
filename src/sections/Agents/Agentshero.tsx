@@ -1,11 +1,9 @@
-// src/sections/Agents/Agents.tsx
-
-import React from "react";
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import { agentsData } from "./agentsData";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
