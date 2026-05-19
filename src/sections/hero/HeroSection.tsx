@@ -1,5 +1,5 @@
 // src/sections/hero/HeroSection.tsx
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { heroData } from "./heroSectionData"; // Import hero data
 import { Link } from "react-router-dom";

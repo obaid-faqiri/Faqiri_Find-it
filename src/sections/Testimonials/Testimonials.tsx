@@ -1,4 +1,3 @@
-// src/sections/Testimonials/Testimonials.tsx
 import { motion, type Variants } from "framer-motion";
 import { FaStar } from "react-icons/fa6";
 import { testimonialsData } from "./testimonialsData";

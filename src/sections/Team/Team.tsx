@@ -1,5 +1,3 @@
-// src/sections/Team/Team.tsx
-
 import { motion, type Variants } from "framer-motion";
 import { FiCircle } from "react-icons/fi";
 import { teamData } from "./teamData";

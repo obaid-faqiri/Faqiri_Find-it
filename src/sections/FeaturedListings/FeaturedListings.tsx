@@ -1,6 +1,3 @@
-// src/sections/FeaturedListings/FeaturedListings.tsx
-
-import React from "react";
 import { featuredListingsData } from "./featuredListingsData";
 
 type Property = {

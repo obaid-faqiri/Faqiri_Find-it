@@ -1,5 +1,3 @@
-// src/components/CTA.tsx
-import React from "react";
 import { Link } from "react-router-dom";
 import { ctaData } from "./ctaData"; // Import the CTA data
 

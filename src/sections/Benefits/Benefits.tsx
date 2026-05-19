@@ -1,5 +1,3 @@
-// src/sections/Benefits/Benefits.tsx
-
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { FiArrowRight, FiCircle } from "react-icons/fi";

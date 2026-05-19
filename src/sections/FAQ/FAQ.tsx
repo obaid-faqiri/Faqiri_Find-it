@@ -1,6 +1,4 @@
-// src/sections/FAQ/FAQ.tsx
-
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { FiChevronDown } from "react-icons/fi";

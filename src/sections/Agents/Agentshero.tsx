@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import { agentsData } from "./agentsData";
 

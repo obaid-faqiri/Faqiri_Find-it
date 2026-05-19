@@ -1,5 +1,3 @@
-// src/sections/StatsSection/StatsSection.tsx
-
 import { motion, type Variants } from "framer-motion";
 import { statsData } from "./statsData";
 

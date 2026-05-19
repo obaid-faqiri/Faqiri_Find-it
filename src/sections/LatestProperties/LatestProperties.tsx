@@ -1,8 +1,5 @@
-// src/sections/LatestProperties/LatestProperties.tsx
-
 import { useMemo, useState } from "react";
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FiCircle } from "react-icons/fi";
 

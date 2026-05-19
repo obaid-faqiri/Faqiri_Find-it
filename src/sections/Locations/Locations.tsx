@@ -1,5 +1,3 @@
-// src/sections/Locations/Locations.tsx
-
 import { motion, type Variants } from "framer-motion";
 import { FiCircle } from "react-icons/fi";
 import { locationsData } from "./locationsData";

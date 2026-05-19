@@ -1,7 +1,6 @@
 // src/sections/Insights/Insights.tsx
 
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { insightsData } from "./insightsData";
 

@@ -1,5 +1,3 @@
-// src/sections/Locations/LocationCard.tsx
-
 interface LocationCardProps {
   title: string;
   properties: string;

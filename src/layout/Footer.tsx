@@ -1,5 +1,3 @@
-// src/sections/Footer/Footer.tsx
-
 import { motion } from "framer-motion";
 import {
   FaInstagram,

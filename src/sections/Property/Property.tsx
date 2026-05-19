@@ -1,6 +1,3 @@
-// src/sections/Property/Property.tsx
-
-import React from "react";
 import { motion, type Variants } from "framer-motion";
 import { FiHome, FiMapPin, FiLayers } from "react-icons/fi";
 import { propertyData } from "./propertyData";

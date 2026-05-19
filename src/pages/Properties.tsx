@@ -1,5 +1,3 @@
-// src/pages/Properties .tsx
-import React from "react";
 import Properties from "../sections/Property/Property";
 import FAQ from "../sections/FAQ/FAQ";
 

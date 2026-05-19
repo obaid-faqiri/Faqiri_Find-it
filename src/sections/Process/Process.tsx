@@ -1,5 +1,3 @@
-// src/sections/Process/Process.tsx
-
 import { motion, type Variants } from "framer-motion";
 import { FiCircle, FiArrowRight } from "react-icons/fi";
 import { processData } from "./processData";

@@ -1,5 +1,3 @@
-// src/layout/App.tsx
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import routing components
 import Header from "./layout/Header";
 import Home from "./pages/Home";

@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import HeroSection from "../sections/hero/HeroSection";
 import FeaturedListings from "../sections/FeaturedListings/FeaturedListings"; 
 import Benefits from "../sections/Benefits/Benefits";

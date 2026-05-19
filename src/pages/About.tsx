@@ -1,5 +1,3 @@
-// src/pages/About.tsx
-import React from "react";
 import AboutIntro from "../sections/AboutIntro/AboutIntro";
 import HistoryTimeline from "../sections/HistoryTimeline/HistoryTimeline";
 import Process from "../sections/Process/Process";
