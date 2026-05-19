@@ -2,7 +2,7 @@
 
 import avatar1 from "../../assets/images/Home/16.jpg";
 import avatar2 from "../../assets/images/Home/17.jpg";
-import avatar3 from "../../assets/images/home/19.jpg";
+import avatar3 from "../../assets/images/Home/19.jpg";
 import avatar4 from "../../assets/images/Home/20.jpg";
 import avatar5 from "../../assets/images/Home/29.webp";
 import avatar6 from "../../assets/images/Home/30.webp";
